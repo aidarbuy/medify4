@@ -26,4 +26,18 @@ describe("db save doctors", function () {
 		expect(doctors.length).to.be.at.least(1);
 	});
 
+	it("should have a doctor with a name", function () {
+		expect(doctors[0].name).to.not.be.empty;
+	});
+
+	it("should have a doctor with a description", function () {
+		expect(doctors[0].name).to.not.be.empty;
+	});
+
+});
+
+describe("db get doctors", function () {
+	after(function () {
+		mongoose.connection.close();
+	});
 });
