@@ -1,0 +1,27 @@
+link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+link(rel='stylesheet', href='/styles/cosmo.min.css')
+link(rel='stylesheet', href='/styles/main.css')
+
+script(type='text/javascript', src='/bower_components/angular/angular.min.js')
+script(type='text/javascript', src='/bower_components/angular-resource/angular-resource.min.js')
+script(type='text/javascript', src='/app/app.js')
+script(type='text/javascript', src='/app/doctorsFactory.js')
+
+body(ng-app='app')
+	.container
+		div(ng-controller='MainController')
+			h1 Post a Doctor:
+			form(ng-submit='submit()')
+				.form-group
+					input.form-control(placeholder="Enter name here...")(ng-model='name')
+				.form-group
+					input.form-control(placeholder="Enter description...")(ng-model='description')
+				.form-group
+					button.btn.btn-primary(type="submit") Post
+			h1 Find a Doctor today!
+			.col-md-6(ng-repeat="doctor in doctors | orderBy: 'name'")
+				.list-group
+					a.list-group-item(href='#')
+						img(src="{{ doctor.imageURL }}")
+						h2.list-group-item-heading {{ doctor.name }}
+						h4.list-group-item-text {{ doctor.description }}
