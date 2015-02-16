@@ -21,4 +21,4 @@ doctorsData.connectDB('mongodb://dbuser:dbpassword@ds045001.mongolab.com:045001/
 .then(function() { console.log("ready to serve...") });
 
 console.log("server is up");
-app.listen(7900);
+app.listen(process.env.PORT, process.env.IP);
