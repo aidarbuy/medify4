@@ -14,7 +14,7 @@ app.get('*', function(req, res) {
 	res.render('index');
 });
 
-doctorsData.connectDB('mongodb://dbuser:dbpassword@ds045001.mongolab.com:045001/')
+doctorsData.connectDB('mongodb://dbuser:dbpassword@ds045001.mongolab.com:045001/medify4')
 .then(function() { console.log("connected to remote mongodb") })
 .then(doctorsData.resetDoctors)
 .then(doctorsData.seedDoctors)
