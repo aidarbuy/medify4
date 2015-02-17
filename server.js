@@ -17,6 +17,6 @@ doctorsData.connectDB('mongodb://dbuser:dbpassword@ds045001.mongolab.com:045001/
 	.then(doctorsData.seedDoctors)
 	.then(function() { console.log("Ready to serve...") });
 
-var processEnvPort = 7900, processEnvIP = process.env.IP;
+var processEnvPort = process.env.PORT, processEnvIP = process.env.IP;
 console.log("Listening on " + processEnvIP + ":" + processEnvPort);
 app.listen(processEnvPort, processEnvIP);
