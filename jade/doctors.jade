@@ -1,0 +1,10 @@
+h1 Find a Doctor today!
+#gmapwrapper
+	#gmapc1
+		.col-md-6.list-group(ng-repeat="doctor in doctors | orderBy: 'name'")
+			a.list-group-item(href='#')
+				img.img-responsive.img-rounded(src="{{ doctor.imageURL }}")
+				h2.list-group-item-heading {{ doctor.name }}
+				h4.list-group-item-text {{ doctor.description }}
+	#gmapc2
+		ui-gmap-google-map(center='maps.center' zoom='maps.zoom')

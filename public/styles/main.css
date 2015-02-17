@@ -1,3 +1,41 @@
+.container {
+    margin: 0;
+    width: 100%;
+}
+
+.angular-google-map-container {
+    /*position: absolute;*/
+    /*display: block;*/
+    /*float: right;*/
+    top: 0px;
+    bottom: 0px;
+    height: 800px;
+    width: 100%;
+}
+
+#gmapwrapper{
+    /*background:red;*/
+    overflow:auto;
+}
+#gmapc1{
+    float:left;
+    width:58%;
+    /*background:blue;*/
+}
+#gmapc2{
+    float:right;
+    width:42%;
+    right: 0px;
+    /*background:green;*/
+}​
+
+/*.map-canvas {
+    display: block;
+    float: right;
+    right: 0px;
+    width: 400px;
+}*/
+
 a.list-group-item .list-group-item-heading {
   color: #333;
 }

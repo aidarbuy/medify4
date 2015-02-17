@@ -1,0 +1,696 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express-generator',
+1 verbose cli   '-g' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 silly cache add args [ 'express-generator', null ]
+5 verbose cache add spec express-generator
+6 silly cache add parsed spec { raw: 'express-generator',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'express-generator',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed express-generator@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'express-generator', range: '*', hasData: false }
+11 silly mapToRegistry name express-generator
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/express-generator
+15 verbose addNameRange registry:https://registry.npmjs.org/express-generator not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/express-generator
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 12:05:46 PM
+19 verbose request id be15427373f699d2
+20 verbose etag "9LEDNBUQFES5NAC1VKJ7XDLQ3"
+21 http request GET https://registry.npmjs.org/express-generator
+22 http 304 https://registry.npmjs.org/express-generator
+23 silly get cb [ 304,
+23 silly get   { date: 'Tue, 17 Feb 2015 17:05:46 GMT',
+23 silly get     server: 'Apache',
+23 silly get     via: '1.1 varnish',
+23 silly get     'last-modified': 'Tue, 17 Feb 2015 17:05:46 GMT',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     etag: '"9LEDNBUQFES5NAC1VKJ7XDLQ3"',
+23 silly get     age: '0',
+23 silly get     'x-served-by': 'cache-iad2128-IAD',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1424192746.541092,VS0,VE178',
+23 silly get     vary: 'Accept',
+23 silly get     'content-length': '0',
+23 silly get     'keep-alive': 'timeout=10, max=50',
+23 silly get     connection: 'Keep-Alive' } ]
+24 verbose etag https://registry.npmjs.org/express-generator from cache
+25 verbose get saving express-generator to /Users/aidarbuy/.npm/registry.npmjs.org/express-generator/.cache.json
+26 silly addNameRange number 2 { name: 'express-generator', range: '*', hasData: true }
+27 silly addNameRange versions [ 'express-generator',
+27 silly addNameRange   [ '1.0.0',
+27 silly addNameRange     '3.0.0',
+27 silly addNameRange     '4.0.0',
+27 silly addNameRange     '4.2.0',
+27 silly addNameRange     '4.8.0',
+27 silly addNameRange     '4.9.0',
+27 silly addNameRange     '4.10.0',
+27 silly addNameRange     '4.11.0',
+27 silly addNameRange     '4.11.1',
+27 silly addNameRange     '4.11.2' ] ]
+28 verbose addNamed express-generator@4.11.2
+29 silly addNamed semver.valid 4.11.2
+30 silly addNamed semver.validRange 4.11.2
+31 silly cache afterAdd express-generator@4.11.2
+32 verbose afterAdd /Users/aidarbuy/.npm/express-generator/4.11.2/package/package.json not in flight; writing
+33 verbose afterAdd /Users/aidarbuy/.npm/express-generator/4.11.2/package/package.json written
+34 silly install resolved [ { name: 'express-generator',
+34 silly install resolved     description: 'Express\' application generator',
+34 silly install resolved     version: '4.11.2',
+34 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+34 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+34 silly install resolved     keywords:
+34 silly install resolved      [ 'express',
+34 silly install resolved        'framework',
+34 silly install resolved        'sinatra',
+34 silly install resolved        'web',
+34 silly install resolved        'rest',
+34 silly install resolved        'restful',
+34 silly install resolved        'router',
+34 silly install resolved        'app',
+34 silly install resolved        'api' ],
+34 silly install resolved     repository: { type: 'git', url: 'https://github.com/expressjs/generator' },
+34 silly install resolved     license: 'MIT',
+34 silly install resolved     dependencies: { commander: '2.6.0', mkdirp: '0.5.0', 'sorted-object': '1.0.0' },
+34 silly install resolved     main: 'bin/express',
+34 silly install resolved     preferGlobal: true,
+34 silly install resolved     bin: { express: './bin/express' },
+34 silly install resolved     devDependencies: { mocha: '~2.1.0', rimraf: '~2.2.8', supertest: '~0.15.0' },
+34 silly install resolved     engines: { node: '>= 0.10' },
+34 silly install resolved     files: [ 'LICENSE', 'bin/', 'templates/' ],
+34 silly install resolved     scripts:
+34 silly install resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+34 silly install resolved        'test-ci': 'mocha --reporter spec --check-leaks test/' },
+34 silly install resolved     gitHead: '5f0a6a48d294eb7060fecf0a2ad40c19806a71ff',
+34 silly install resolved     bugs: { url: 'https://github.com/expressjs/generator/issues' },
+34 silly install resolved     homepage: 'https://github.com/expressjs/generator',
+34 silly install resolved     _id: 'express-generator@4.11.2',
+34 silly install resolved     _shasum: 'f8c78730ca07c191129f50471b401786c26ebbc5',
+34 silly install resolved     _from: 'express-generator@*',
+34 silly install resolved     _npmVersion: '1.4.28',
+34 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+34 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: 'f8c78730ca07c191129f50471b401786c26ebbc5',
+34 silly install resolved        tarball: 'http://registry.npmjs.org/express-generator/-/express-generator-4.11.2.tgz' },
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/express-generator/-/express-generator-4.11.2.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install express-generator@4.11.2 into /usr/local/lib
+36 info installOne express-generator@4.11.2
+37 verbose installOne of express-generator to /usr/local/lib not in flight; installing
+38 verbose lock using /Users/aidarbuy/.npm/_locks/express-generator-d3cc1706f4adef09.lock for /usr/local/lib/node_modules/express-generator
+39 silly install write writing express-generator 4.11.2 to /usr/local/lib/node_modules/express-generator
+40 silly cache addNamed cb express-generator@4.11.2
+41 verbose unbuild lib/node_modules/express-generator
+42 verbose gentlyRm vacuuming /usr/local/lib/node_modules/express-generator
+43 verbose tar unpack /Users/aidarbuy/.npm/express-generator/4.11.2/package.tgz
+44 verbose tar unpacking to /usr/local/lib/node_modules/express-generator
+45 verbose gentlyRm vacuuming /usr/local/lib/node_modules/express-generator
+46 silly gunzTarPerm modes [ '755', '644' ]
+47 silly gunzTarPerm extractEntry package.json
+48 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+49 silly gunzTarPerm extractEntry README.md
+50 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+51 silly gunzTarPerm extractEntry LICENSE
+52 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+53 silly gunzTarPerm extractEntry bin/express
+54 silly gunzTarPerm modified mode [ 'bin/express', 438, 420 ]
+55 silly gunzTarPerm extractEntry templates/css/style.css
+56 silly gunzTarPerm modified mode [ 'templates/css/style.css', 438, 420 ]
+57 silly gunzTarPerm extractEntry templates/css/style.less
+58 silly gunzTarPerm modified mode [ 'templates/css/style.less', 438, 420 ]
+59 silly gunzTarPerm extractEntry templates/css/style.scss
+60 silly gunzTarPerm modified mode [ 'templates/css/style.scss', 438, 420 ]
+61 silly gunzTarPerm extractEntry templates/css/style.styl
+62 silly gunzTarPerm modified mode [ 'templates/css/style.styl', 438, 420 ]
+63 silly gunzTarPerm extractEntry templates/ejs/error.ejs
+64 silly gunzTarPerm modified mode [ 'templates/ejs/error.ejs', 438, 420 ]
+65 silly gunzTarPerm extractEntry templates/ejs/index.ejs
+66 silly gunzTarPerm modified mode [ 'templates/ejs/index.ejs', 438, 420 ]
+67 silly gunzTarPerm extractEntry templates/hbs/error.hbs
+68 silly gunzTarPerm modified mode [ 'templates/hbs/error.hbs', 438, 420 ]
+69 silly gunzTarPerm extractEntry templates/hbs/index.hbs
+70 silly gunzTarPerm modified mode [ 'templates/hbs/index.hbs', 438, 420 ]
+71 silly gunzTarPerm extractEntry templates/hbs/layout.hbs
+72 silly gunzTarPerm modified mode [ 'templates/hbs/layout.hbs', 438, 420 ]
+73 silly gunzTarPerm extractEntry templates/hogan/error.hjs
+74 silly gunzTarPerm modified mode [ 'templates/hogan/error.hjs', 438, 420 ]
+75 silly gunzTarPerm extractEntry templates/hogan/index.hjs
+76 silly gunzTarPerm modified mode [ 'templates/hogan/index.hjs', 438, 420 ]
+77 silly gunzTarPerm extractEntry templates/jade/error.jade
+78 silly gunzTarPerm modified mode [ 'templates/jade/error.jade', 438, 420 ]
+79 silly gunzTarPerm extractEntry templates/jade/index.jade
+80 silly gunzTarPerm modified mode [ 'templates/jade/index.jade', 438, 420 ]
+81 silly gunzTarPerm extractEntry templates/jade/layout.jade
+82 silly gunzTarPerm modified mode [ 'templates/jade/layout.jade', 438, 420 ]
+83 silly gunzTarPerm extractEntry templates/js/app.js
+84 silly gunzTarPerm modified mode [ 'templates/js/app.js', 438, 420 ]
+85 silly gunzTarPerm extractEntry templates/js/gitignore
+86 silly gunzTarPerm modified mode [ 'templates/js/gitignore', 438, 420 ]
+87 silly gunzTarPerm extractEntry templates/js/routes/index.js
+88 silly gunzTarPerm modified mode [ 'templates/js/routes/index.js', 438, 420 ]
+89 silly gunzTarPerm extractEntry templates/js/routes/users.js
+90 silly gunzTarPerm modified mode [ 'templates/js/routes/users.js', 438, 420 ]
+91 silly gunzTarPerm extractEntry templates/js/www
+92 silly gunzTarPerm modified mode [ 'templates/js/www', 438, 420 ]
+93 info preinstall express-generator@4.11.2
+94 silly prepareForInstallMany adding commander@2.6.0 from express-generator dependencies
+95 silly prepareForInstallMany adding mkdirp@0.5.0 from express-generator dependencies
+96 silly prepareForInstallMany adding sorted-object@1.0.0 from express-generator dependencies
+97 silly cache add args [ 'commander@2.6.0', null ]
+98 verbose cache add spec commander@2.6.0
+99 silly cache add args [ 'mkdirp@0.5.0', null ]
+100 verbose cache add spec mkdirp@0.5.0
+101 silly cache add parsed spec { raw: 'commander@2.6.0',
+101 silly cache add   scope: null,
+101 silly cache add   name: 'commander',
+101 silly cache add   rawSpec: '2.6.0',
+101 silly cache add   spec: '2.6.0',
+101 silly cache add   type: 'version' }
+102 verbose addNamed commander@2.6.0
+103 silly addNamed semver.valid 2.6.0
+104 silly addNamed semver.validRange 2.6.0
+105 silly mapToRegistry name commander
+106 silly mapToRegistry using default registry
+107 silly mapToRegistry registry https://registry.npmjs.org/
+108 silly mapToRegistry uri https://registry.npmjs.org/commander
+109 verbose addNameVersion registry:https://registry.npmjs.org/commander not in flight; fetching
+110 silly cache add parsed spec { raw: 'mkdirp@0.5.0',
+110 silly cache add   scope: null,
+110 silly cache add   name: 'mkdirp',
+110 silly cache add   rawSpec: '0.5.0',
+110 silly cache add   spec: '0.5.0',
+110 silly cache add   type: 'version' }
+111 verbose addNamed mkdirp@0.5.0
+112 silly addNamed semver.valid 0.5.0
+113 silly addNamed semver.validRange 0.5.0
+114 silly mapToRegistry name mkdirp
+115 silly mapToRegistry using default registry
+116 silly mapToRegistry registry https://registry.npmjs.org/
+117 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+118 verbose addNameVersion registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+119 silly cache add args [ 'sorted-object@1.0.0', null ]
+120 verbose cache add spec sorted-object@1.0.0
+121 silly cache add parsed spec { raw: 'sorted-object@1.0.0',
+121 silly cache add   scope: null,
+121 silly cache add   name: 'sorted-object',
+121 silly cache add   rawSpec: '1.0.0',
+121 silly cache add   spec: '1.0.0',
+121 silly cache add   type: 'version' }
+122 verbose addNamed sorted-object@1.0.0
+123 silly addNamed semver.valid 1.0.0
+124 silly addNamed semver.validRange 1.0.0
+125 silly mapToRegistry name sorted-object
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry uri https://registry.npmjs.org/sorted-object
+129 verbose addNameVersion registry:https://registry.npmjs.org/sorted-object not in flight; fetching
+130 verbose request uri https://registry.npmjs.org/sorted-object
+131 verbose request no auth needed
+132 info attempt registry request try #1 at 12:05:46 PM
+133 http request GET https://registry.npmjs.org/sorted-object
+134 verbose request uri https://registry.npmjs.org/commander
+135 verbose request no auth needed
+136 info attempt registry request try #1 at 12:05:46 PM
+137 verbose etag "7XSR3BPW7CACS7PUAQWFXSAHJ"
+138 http request GET https://registry.npmjs.org/commander
+139 verbose request uri https://registry.npmjs.org/mkdirp
+140 verbose request no auth needed
+141 info attempt registry request try #1 at 12:05:46 PM
+142 verbose etag "CL75KK6ZZI6UXVC9HS3VYDN5V"
+143 http request GET https://registry.npmjs.org/mkdirp
+144 http 304 https://registry.npmjs.org/mkdirp
+145 silly get cb [ 304,
+145 silly get   { date: 'Tue, 17 Feb 2015 17:05:46 GMT',
+145 silly get     server: 'Apache',
+145 silly get     via: '1.1 varnish',
+145 silly get     'last-modified': 'Tue, 17 Feb 2015 17:05:29 GMT',
+145 silly get     'cache-control': 'max-age=60',
+145 silly get     etag: '"CL75KK6ZZI6UXVC9HS3VYDN5V"',
+145 silly get     age: '21',
+145 silly get     'x-served-by': 'cache-iad2136-IAD',
+145 silly get     'x-cache': 'HIT',
+145 silly get     'x-cache-hits': '3',
+145 silly get     'x-timer': 'S1424192746.903636,VS0,VE0',
+145 silly get     vary: 'Accept',
+145 silly get     'content-length': '0',
+145 silly get     'keep-alive': 'timeout=10, max=50',
+145 silly get     connection: 'Keep-Alive' } ]
+146 verbose etag https://registry.npmjs.org/mkdirp from cache
+147 verbose get saving mkdirp to /Users/aidarbuy/.npm/registry.npmjs.org/mkdirp/.cache.json
+148 http 304 https://registry.npmjs.org/commander
+149 silly get cb [ 304,
+149 silly get   { date: 'Tue, 17 Feb 2015 17:05:46 GMT',
+149 silly get     server: 'Apache',
+149 silly get     via: '1.1 varnish',
+149 silly get     'last-modified': 'Tue, 17 Feb 2015 17:05:06 GMT',
+149 silly get     'cache-control': 'max-age=60',
+149 silly get     etag: '"7XSR3BPW7CACS7PUAQWFXSAHJ"',
+149 silly get     age: '42',
+149 silly get     'x-served-by': 'cache-iad2132-IAD',
+149 silly get     'x-cache': 'HIT',
+149 silly get     'x-cache-hits': '3',
+149 silly get     'x-timer': 'S1424192746.902791,VS0,VE0',
+149 silly get     vary: 'Accept',
+149 silly get     'content-length': '0',
+149 silly get     'keep-alive': 'timeout=10, max=50',
+149 silly get     connection: 'Keep-Alive' } ]
+150 verbose etag https://registry.npmjs.org/commander from cache
+151 verbose get saving commander to /Users/aidarbuy/.npm/registry.npmjs.org/commander/.cache.json
+152 silly cache afterAdd mkdirp@0.5.0
+153 verbose afterAdd /Users/aidarbuy/.npm/mkdirp/0.5.0/package/package.json not in flight; writing
+154 silly cache afterAdd commander@2.6.0
+155 verbose afterAdd /Users/aidarbuy/.npm/commander/2.6.0/package/package.json not in flight; writing
+156 verbose afterAdd /Users/aidarbuy/.npm/mkdirp/0.5.0/package/package.json written
+157 verbose afterAdd /Users/aidarbuy/.npm/commander/2.6.0/package/package.json written
+158 http 200 https://registry.npmjs.org/sorted-object
+159 silly get cb [ 200,
+159 silly get   { date: 'Tue, 17 Feb 2015 17:05:47 GMT',
+159 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+159 silly get     etag: '"96C06KL7Y0I359QEPIMOCTJG0"',
+159 silly get     'content-type': 'application/json',
+159 silly get     'cache-control': 'max-age=60',
+159 silly get     'content-length': '2564',
+159 silly get     'accept-ranges': 'bytes',
+159 silly get     via: '1.1 varnish',
+159 silly get     age: '0',
+159 silly get     'x-served-by': 'cache-iad2135-IAD',
+159 silly get     'x-cache': 'HIT',
+159 silly get     'x-cache-hits': '1',
+159 silly get     'x-timer': 'S1424192746.897740,VS0,VE703',
+159 silly get     vary: 'Accept',
+159 silly get     'keep-alive': 'timeout=10, max=50',
+159 silly get     connection: 'Keep-Alive' } ]
+160 verbose get saving sorted-object to /Users/aidarbuy/.npm/registry.npmjs.org/sorted-object/.cache.json
+161 silly mapToRegistry name sorted-object
+162 silly mapToRegistry using default registry
+163 silly mapToRegistry registry https://registry.npmjs.org/
+164 silly mapToRegistry uri https://registry.npmjs.org/sorted-object
+165 verbose addRemoteTarball https://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz not in flight; adding
+166 verbose addRemoteTarball [ 'https://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz',
+166 verbose addRemoteTarball   '5d1f4f9c1fb2cd48965967304e212eb44cfb6d05' ]
+167 info retry fetch attempt 1 at 12:05:47 PM
+168 info attempt registry request try #1 at 12:05:47 PM
+169 http fetch GET https://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz
+170 http fetch 200 https://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz
+171 silly fetchAndShaCheck shasum 5d1f4f9c1fb2cd48965967304e212eb44cfb6d05
+172 verbose addTmpTarball /tmp/npm-19010-fe8435f4/registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz not in flight; adding
+173 verbose addTmpTarball already have metadata; skipping unpack for sorted-object@1.0.0
+174 silly cache afterAdd sorted-object@1.0.0
+175 verbose afterAdd /Users/aidarbuy/.npm/sorted-object/1.0.0/package/package.json not in flight; writing
+176 verbose afterAdd /Users/aidarbuy/.npm/sorted-object/1.0.0/package/package.json written
+177 silly install resolved [ { name: 'mkdirp',
+177 silly install resolved     description: 'Recursively mkdir, like `mkdir -p`',
+177 silly install resolved     version: '0.5.0',
+177 silly install resolved     author:
+177 silly install resolved      { name: 'James Halliday',
+177 silly install resolved        email: 'mail@substack.net',
+177 silly install resolved        url: 'http://substack.net' },
+177 silly install resolved     main: './index',
+177 silly install resolved     keywords: [ 'mkdir', 'directory' ],
+177 silly install resolved     repository:
+177 silly install resolved      { type: 'git',
+177 silly install resolved        url: 'https://github.com/substack/node-mkdirp.git' },
+177 silly install resolved     scripts: { test: 'tap test/*.js' },
+177 silly install resolved     dependencies: { minimist: '0.0.8' },
+177 silly install resolved     devDependencies: { tap: '~0.4.0', 'mock-fs': '~2.2.0' },
+177 silly install resolved     bin: { mkdirp: 'bin/cmd.js' },
+177 silly install resolved     license: 'MIT',
+177 silly install resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+177 silly install resolved     homepage: 'https://github.com/substack/node-mkdirp',
+177 silly install resolved     _id: 'mkdirp@0.5.0',
+177 silly install resolved     dist:
+177 silly install resolved      { shasum: '1d73076a6df986cd9344e15e71fcc05a4c9abf12',
+177 silly install resolved        tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.5.0.tgz' },
+177 silly install resolved     _from: 'mkdirp@0.5.0',
+177 silly install resolved     _npmVersion: '1.4.3',
+177 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+177 silly install resolved     maintainers: [ [Object] ],
+177 silly install resolved     directories: {},
+177 silly install resolved     _shasum: '1d73076a6df986cd9344e15e71fcc05a4c9abf12',
+177 silly install resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.0.tgz',
+177 silly install resolved     readme: 'ERROR: No README data found!' },
+177 silly install resolved   { name: 'commander',
+177 silly install resolved     version: '2.6.0',
+177 silly install resolved     description: 'the complete solution for node.js command-line programs',
+177 silly install resolved     keywords: [ 'command', 'option', 'parser', 'prompt' ],
+177 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+177 silly install resolved     license: 'MIT',
+177 silly install resolved     repository: { type: 'git', url: 'https://github.com/tj/commander.js.git' },
+177 silly install resolved     devDependencies: { should: '>= 0.0.1' },
+177 silly install resolved     scripts: { test: 'make test' },
+177 silly install resolved     main: 'index',
+177 silly install resolved     engines: { node: '>= 0.6.x' },
+177 silly install resolved     files: [ 'index.js' ],
+177 silly install resolved     gitHead: 'c6807fd154dd3b7ce8756f141f8d3acfcc74be60',
+177 silly install resolved     bugs: { url: 'https://github.com/tj/commander.js/issues' },
+177 silly install resolved     homepage: 'https://github.com/tj/commander.js',
+177 silly install resolved     _id: 'commander@2.6.0',
+177 silly install resolved     _shasum: '9df7e52fb2a0cb0fb89058ee80c3104225f37e1d',
+177 silly install resolved     _from: 'commander@2.6.0',
+177 silly install resolved     _npmVersion: '2.1.12',
+177 silly install resolved     _nodeVersion: '0.11.14',
+177 silly install resolved     _npmUser: { name: 'zhiyelee', email: 'zhiyelee@gmail.com' },
+177 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+177 silly install resolved     dist:
+177 silly install resolved      { shasum: '9df7e52fb2a0cb0fb89058ee80c3104225f37e1d',
+177 silly install resolved        tarball: 'http://registry.npmjs.org/commander/-/commander-2.6.0.tgz' },
+177 silly install resolved     directories: {},
+177 silly install resolved     _resolved: 'https://registry.npmjs.org/commander/-/commander-2.6.0.tgz',
+177 silly install resolved     readme: 'ERROR: No README data found!' },
+177 silly install resolved   { name: 'sorted-object',
+177 silly install resolved     description: 'Returns a copy of an object with its keys sorted',
+177 silly install resolved     keywords: [ 'sort', 'keys', 'object' ],
+177 silly install resolved     version: '1.0.0',
+177 silly install resolved     author:
+177 silly install resolved      { name: 'Domenic Denicola',
+177 silly install resolved        email: 'domenic@domenicdenicola.com',
+177 silly install resolved        url: 'http://domenic.me/' },
+177 silly install resolved     license: 'WTFPL',
+177 silly install resolved     repository:
+177 silly install resolved      { type: 'git',
+177 silly install resolved        url: 'git://github.com/domenic/sorted-object.git' },
+177 silly install resolved     bugs: { url: 'http://github.com/domenic/sorted-object/issues' },
+177 silly install resolved     main: 'lib/sorted-object.js',
+177 silly install resolved     scripts:
+177 silly install resolved      { test: 'tape test/tests.js',
+177 silly install resolved        lint: 'jshint lib && jshint test' },
+177 silly install resolved     devDependencies: { jshint: '~2.4.3', tape: '~2.4.2' },
+177 silly install resolved     homepage: 'https://github.com/domenic/sorted-object',
+177 silly install resolved     _id: 'sorted-object@1.0.0',
+177 silly install resolved     dist:
+177 silly install resolved      { shasum: '5d1f4f9c1fb2cd48965967304e212eb44cfb6d05',
+177 silly install resolved        tarball: 'http://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz' },
+177 silly install resolved     _from: 'sorted-object@1.0.0',
+177 silly install resolved     _npmVersion: '1.3.25',
+177 silly install resolved     _npmUser: { name: 'domenic', email: 'domenic@domenicdenicola.com' },
+177 silly install resolved     maintainers: [ [Object] ],
+177 silly install resolved     directories: {},
+177 silly install resolved     _shasum: '5d1f4f9c1fb2cd48965967304e212eb44cfb6d05',
+177 silly install resolved     _resolved: 'https://registry.npmjs.org/sorted-object/-/sorted-object-1.0.0.tgz' } ]
+178 info install mkdirp@0.5.0 into /usr/local/lib/node_modules/express-generator
+179 info install commander@2.6.0 into /usr/local/lib/node_modules/express-generator
+180 info install sorted-object@1.0.0 into /usr/local/lib/node_modules/express-generator
+181 info installOne mkdirp@0.5.0
+182 verbose installOne of mkdirp to /usr/local/lib/node_modules/express-generator not in flight; installing
+183 info installOne commander@2.6.0
+184 verbose installOne of commander to /usr/local/lib/node_modules/express-generator not in flight; installing
+185 info installOne sorted-object@1.0.0
+186 verbose installOne of sorted-object to /usr/local/lib/node_modules/express-generator not in flight; installing
+187 verbose lock using /Users/aidarbuy/.npm/_locks/mkdirp-69ad5b9649099f2e.lock for /usr/local/lib/node_modules/express-generator/node_modules/mkdirp
+188 silly install write writing mkdirp 0.5.0 to /usr/local/lib/node_modules/express-generator/node_modules/mkdirp
+189 silly cache addNamed cb mkdirp@0.5.0
+190 verbose unbuild lib/node_modules/express-generator/node_modules/mkdirp
+191 verbose lock using /Users/aidarbuy/.npm/_locks/sorted-object-9b42d65d2fbd5a20.lock for /usr/local/lib/node_modules/express-generator/node_modules/sorted-object
+192 verbose lock using /Users/aidarbuy/.npm/_locks/commander-5f4b84607d0b55dc.lock for /usr/local/lib/node_modules/express-generator/node_modules/commander
+193 silly install write writing sorted-object 1.0.0 to /usr/local/lib/node_modules/express-generator/node_modules/sorted-object
+194 silly install write writing commander 2.6.0 to /usr/local/lib/node_modules/express-generator/node_modules/commander
+195 silly cache addNamed cb commander@2.6.0
+196 verbose unbuild lib/node_modules/express-generator/node_modules/commander
+197 verbose gentlyRm vacuuming /usr/local/lib/node_modules/express-generator/node_modules/mkdirp
+198 verbose tar unpack /Users/aidarbuy/.npm/mkdirp/0.5.0/package.tgz
+199 verbose tar unpacking to /usr/local/lib/node_modules/express-generator/node_modules/mkdirp
+200 verbose gentlyRm vacuuming /usr/local/lib/node_modules/express-generator/node_modules/mkdirp
+201 verbose gentlyRm vacuuming /usr/local/lib/node_modules/express-generator/node_modules/commander
+202 silly gunzTarPerm modes [ '755', '644' ]
+203 verbose tar unpack /Users/aidarbuy/.npm/commander/2.6.0/package.tgz
+204 verbose tar unpacking to /usr/local/lib/node_modules/express-generator/node_modules/commander
+205 verbose gentlyRm vacuuming /usr/local/lib/node_modules/express-generator/node_modules/commander
+206 silly gunzTarPerm modes [ '755', '644' ]
+207 silly cache addNamed cb sorted-object@1.0.0
+208 verbose unbuild lib/node_modules/express-generator/node_modules/sorted-object
+209 verbose gentlyRm vacuuming /usr/local/lib/node_modules/express-generator/node_modules/sorted-object
+210 silly gunzTarPerm extractEntry package.json
+211 verbose tar unpack /Users/aidarbuy/.npm/sorted-object/1.0.0/package.tgz
+212 verbose tar unpacking to /usr/local/lib/node_modules/express-generator/node_modules/sorted-object
+213 verbose gentlyRm vacuuming /usr/local/lib/node_modules/express-generator/node_modules/sorted-object
+214 silly gunzTarPerm modes [ '755', '644' ]
+215 silly gunzTarPerm extractEntry package.json
+216 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+217 silly gunzTarPerm extractEntry .npmignore
+218 silly gunzTarPerm extractEntry LICENSE
+219 silly gunzTarPerm extractEntry package.json
+220 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+221 silly gunzTarPerm extractEntry index.js
+222 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+223 silly gunzTarPerm extractEntry Readme.md
+224 silly gunzTarPerm modified mode [ 'Readme.md', 436, 420 ]
+225 silly gunzTarPerm extractEntry History.md
+226 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+227 silly gunzTarPerm extractEntry README.md
+228 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+229 silly gunzTarPerm extractEntry lib/sorted-object.js
+230 silly gunzTarPerm modified mode [ 'lib/sorted-object.js', 438, 420 ]
+231 silly gunzTarPerm extractEntry index.js
+232 silly gunzTarPerm extractEntry .travis.yml
+233 silly gunzTarPerm extractEntry bin/cmd.js
+234 silly gunzTarPerm extractEntry bin/usage.txt
+235 silly gunzTarPerm extractEntry LICENSE.txt
+236 silly gunzTarPerm modified mode [ 'LICENSE.txt', 438, 420 ]
+237 silly gunzTarPerm extractEntry examples/pow.js
+238 silly gunzTarPerm extractEntry readme.markdown
+239 silly gunzTarPerm extractEntry test/chmod.js
+240 silly gunzTarPerm extractEntry test/opts_fs_sync.js
+241 silly gunzTarPerm extractEntry test/perm.js
+242 silly gunzTarPerm extractEntry test/perm_sync.js
+243 silly gunzTarPerm extractEntry test/opts_fs.js
+244 silly gunzTarPerm extractEntry test/rel.js
+245 silly gunzTarPerm extractEntry test/return.js
+246 silly gunzTarPerm extractEntry test/return_sync.js
+247 silly gunzTarPerm extractEntry test/root.js
+248 silly gunzTarPerm extractEntry test/sync.js
+249 silly gunzTarPerm extractEntry test/mkdirp.js
+250 silly gunzTarPerm extractEntry test/umask.js
+251 silly gunzTarPerm extractEntry test/clobber.js
+252 silly gunzTarPerm extractEntry test/umask_sync.js
+253 silly gunzTarPerm extractEntry test/race.js
+254 info preinstall sorted-object@1.0.0
+255 silly install resolved []
+256 verbose about to build /usr/local/lib/node_modules/express-generator/node_modules/sorted-object
+257 info build /usr/local/lib/node_modules/express-generator/node_modules/sorted-object
+258 verbose linkStuff [ true,
+258 verbose linkStuff   '/usr/local/lib/node_modules',
+258 verbose linkStuff   false,
+258 verbose linkStuff   '/usr/local/lib/node_modules/express-generator/node_modules' ]
+259 info linkStuff sorted-object@1.0.0
+260 verbose linkBins sorted-object@1.0.0
+261 verbose linkMans sorted-object@1.0.0
+262 verbose rebuildBundles sorted-object@1.0.0
+263 info install sorted-object@1.0.0
+264 info postinstall sorted-object@1.0.0
+265 verbose unlock done using /Users/aidarbuy/.npm/_locks/sorted-object-9b42d65d2fbd5a20.lock for /usr/local/lib/node_modules/express-generator/node_modules/sorted-object
+266 info preinstall commander@2.6.0
+267 silly install resolved []
+268 verbose about to build /usr/local/lib/node_modules/express-generator/node_modules/commander
+269 info build /usr/local/lib/node_modules/express-generator/node_modules/commander
+270 verbose linkStuff [ true,
+270 verbose linkStuff   '/usr/local/lib/node_modules',
+270 verbose linkStuff   false,
+270 verbose linkStuff   '/usr/local/lib/node_modules/express-generator/node_modules' ]
+271 info linkStuff commander@2.6.0
+272 verbose linkBins commander@2.6.0
+273 verbose linkMans commander@2.6.0
+274 verbose rebuildBundles commander@2.6.0
+275 info install commander@2.6.0
+276 info postinstall commander@2.6.0
+277 verbose unlock done using /Users/aidarbuy/.npm/_locks/commander-5f4b84607d0b55dc.lock for /usr/local/lib/node_modules/express-generator/node_modules/commander
+278 info preinstall mkdirp@0.5.0
+279 silly prepareForInstallMany adding minimist@0.0.8 from mkdirp dependencies
+280 silly cache add args [ 'minimist@0.0.8', null ]
+281 verbose cache add spec minimist@0.0.8
+282 silly cache add parsed spec { raw: 'minimist@0.0.8',
+282 silly cache add   scope: null,
+282 silly cache add   name: 'minimist',
+282 silly cache add   rawSpec: '0.0.8',
+282 silly cache add   spec: '0.0.8',
+282 silly cache add   type: 'version' }
+283 verbose addNamed minimist@0.0.8
+284 silly addNamed semver.valid 0.0.8
+285 silly addNamed semver.validRange 0.0.8
+286 silly mapToRegistry name minimist
+287 silly mapToRegistry using default registry
+288 silly mapToRegistry registry https://registry.npmjs.org/
+289 silly mapToRegistry uri https://registry.npmjs.org/minimist
+290 verbose addNameVersion registry:https://registry.npmjs.org/minimist not in flight; fetching
+291 verbose request uri https://registry.npmjs.org/minimist
+292 verbose request no auth needed
+293 info attempt registry request try #1 at 12:05:47 PM
+294 verbose etag "1XZYUOLJVFPQ6WACA6KDFYTSG"
+295 http request GET https://registry.npmjs.org/minimist
+296 http 200 https://registry.npmjs.org/minimist
+297 silly get cb [ 200,
+297 silly get   { date: 'Tue, 17 Feb 2015 17:05:47 GMT',
+297 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+297 silly get     etag: '"EH58Q1UFE0F1ECZAI1KU8YQNG"',
+297 silly get     'content-type': 'application/json',
+297 silly get     'cache-control': 'max-age=60',
+297 silly get     'content-length': '21179',
+297 silly get     'accept-ranges': 'bytes',
+297 silly get     via: '1.1 varnish',
+297 silly get     age: '44',
+297 silly get     'x-served-by': 'cache-iad2133-IAD',
+297 silly get     'x-cache': 'HIT',
+297 silly get     'x-cache-hits': '3',
+297 silly get     'x-timer': 'S1424192747.911663,VS0,VE0',
+297 silly get     vary: 'Accept',
+297 silly get     'keep-alive': 'timeout=10, max=50',
+297 silly get     connection: 'Keep-Alive' } ]
+298 verbose get saving minimist to /Users/aidarbuy/.npm/registry.npmjs.org/minimist/.cache.json
+299 silly mapToRegistry name minimist
+300 silly mapToRegistry using default registry
+301 silly mapToRegistry registry https://registry.npmjs.org/
+302 silly mapToRegistry uri https://registry.npmjs.org/minimist
+303 verbose addRemoteTarball https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz not in flight; adding
+304 verbose addRemoteTarball [ 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz',
+304 verbose addRemoteTarball   '857fcabfc3397d2625b8228262e86aa7a011b05d' ]
+305 info retry fetch attempt 1 at 12:05:47 PM
+306 info attempt registry request try #1 at 12:05:47 PM
+307 http fetch GET https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+308 http fetch 200 https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz
+309 silly fetchAndShaCheck shasum 857fcabfc3397d2625b8228262e86aa7a011b05d
+310 verbose addTmpTarball /tmp/npm-19010-fe8435f4/registry.npmjs.org/minimist/-/minimist-0.0.8.tgz not in flight; adding
+311 verbose addTmpTarball already have metadata; skipping unpack for minimist@0.0.8
+312 silly cache afterAdd minimist@0.0.8
+313 verbose afterAdd /Users/aidarbuy/.npm/minimist/0.0.8/package/package.json not in flight; writing
+314 verbose afterAdd /Users/aidarbuy/.npm/minimist/0.0.8/package/package.json written
+315 silly install resolved [ { name: 'minimist',
+315 silly install resolved     version: '0.0.8',
+315 silly install resolved     description: 'parse argument options',
+315 silly install resolved     main: 'index.js',
+315 silly install resolved     devDependencies: { tape: '~1.0.4', tap: '~0.4.0' },
+315 silly install resolved     scripts: { test: 'tap test/*.js' },
+315 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+315 silly install resolved     repository: { type: 'git', url: 'git://github.com/substack/minimist.git' },
+315 silly install resolved     homepage: 'https://github.com/substack/minimist',
+315 silly install resolved     keywords: [ 'argv', 'getopt', 'parser', 'optimist' ],
+315 silly install resolved     author:
+315 silly install resolved      { name: 'James Halliday',
+315 silly install resolved        email: 'mail@substack.net',
+315 silly install resolved        url: 'http://substack.net' },
+315 silly install resolved     license: 'MIT',
+315 silly install resolved     bugs: { url: 'https://github.com/substack/minimist/issues' },
+315 silly install resolved     _id: 'minimist@0.0.8',
+315 silly install resolved     dist:
+315 silly install resolved      { shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+315 silly install resolved        tarball: 'http://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz' },
+315 silly install resolved     _from: 'minimist@0.0.8',
+315 silly install resolved     _npmVersion: '1.4.3',
+315 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+315 silly install resolved     maintainers: [ [Object] ],
+315 silly install resolved     directories: {},
+315 silly install resolved     _shasum: '857fcabfc3397d2625b8228262e86aa7a011b05d',
+315 silly install resolved     _resolved: 'https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz' } ]
+316 info install minimist@0.0.8 into /usr/local/lib/node_modules/express-generator/node_modules/mkdirp
+317 info installOne minimist@0.0.8
+318 verbose installOne of minimist to /usr/local/lib/node_modules/express-generator/node_modules/mkdirp not in flight; installing
+319 verbose lock using /Users/aidarbuy/.npm/_locks/minimist-c7609edfe719600a.lock for /usr/local/lib/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+320 silly install write writing minimist 0.0.8 to /usr/local/lib/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+321 silly cache addNamed cb minimist@0.0.8
+322 verbose unbuild lib/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+323 verbose gentlyRm vacuuming /usr/local/lib/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+324 verbose tar unpack /Users/aidarbuy/.npm/minimist/0.0.8/package.tgz
+325 verbose tar unpacking to /usr/local/lib/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+326 verbose gentlyRm vacuuming /usr/local/lib/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+327 silly gunzTarPerm modes [ '755', '644' ]
+328 silly gunzTarPerm extractEntry package.json
+329 silly gunzTarPerm extractEntry LICENSE
+330 silly gunzTarPerm extractEntry index.js
+331 silly gunzTarPerm extractEntry .travis.yml
+332 silly gunzTarPerm extractEntry example/parse.js
+333 silly gunzTarPerm extractEntry readme.markdown
+334 silly gunzTarPerm extractEntry test/dash.js
+335 silly gunzTarPerm extractEntry test/default_bool.js
+336 silly gunzTarPerm extractEntry test/dotted.js
+337 silly gunzTarPerm extractEntry test/long.js
+338 silly gunzTarPerm extractEntry test/parse.js
+339 silly gunzTarPerm extractEntry test/parse_modified.js
+340 silly gunzTarPerm extractEntry test/short.js
+341 silly gunzTarPerm extractEntry test/whitespace.js
+342 info preinstall minimist@0.0.8
+343 silly install resolved []
+344 verbose about to build /usr/local/lib/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+345 info build /usr/local/lib/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+346 verbose linkStuff [ true,
+346 verbose linkStuff   '/usr/local/lib/node_modules',
+346 verbose linkStuff   false,
+346 verbose linkStuff   '/usr/local/lib/node_modules/express-generator/node_modules/mkdirp/node_modules' ]
+347 info linkStuff minimist@0.0.8
+348 verbose linkBins minimist@0.0.8
+349 verbose linkMans minimist@0.0.8
+350 verbose rebuildBundles minimist@0.0.8
+351 info install minimist@0.0.8
+352 info postinstall minimist@0.0.8
+353 verbose unlock done using /Users/aidarbuy/.npm/_locks/minimist-c7609edfe719600a.lock for /usr/local/lib/node_modules/express-generator/node_modules/mkdirp/node_modules/minimist
+354 verbose about to build /usr/local/lib/node_modules/express-generator/node_modules/mkdirp
+355 info build /usr/local/lib/node_modules/express-generator/node_modules/mkdirp
+356 verbose linkStuff [ true,
+356 verbose linkStuff   '/usr/local/lib/node_modules',
+356 verbose linkStuff   false,
+356 verbose linkStuff   '/usr/local/lib/node_modules/express-generator/node_modules' ]
+357 info linkStuff mkdirp@0.5.0
+358 verbose linkBins mkdirp@0.5.0
+359 verbose link bins [ { mkdirp: 'bin/cmd.js' },
+359 verbose link bins   '/usr/local/lib/node_modules/express-generator/node_modules/.bin',
+359 verbose link bins   false ]
+360 verbose linkMans mkdirp@0.5.0
+361 verbose rebuildBundles mkdirp@0.5.0
+362 verbose rebuildBundles [ 'minimist' ]
+363 verbose gentlyRm vacuuming /usr/local/lib/node_modules/express-generator/node_modules/.bin/mkdirp
+364 info install mkdirp@0.5.0
+365 info postinstall mkdirp@0.5.0
+366 verbose unlock done using /Users/aidarbuy/.npm/_locks/mkdirp-69ad5b9649099f2e.lock for /usr/local/lib/node_modules/express-generator/node_modules/mkdirp
+367 verbose about to build /usr/local/lib/node_modules/express-generator
+368 info build /usr/local/lib/node_modules/express-generator
+369 verbose linkStuff [ true,
+369 verbose linkStuff   '/usr/local/lib/node_modules',
+369 verbose linkStuff   true,
+369 verbose linkStuff   '/usr/local/lib/node_modules' ]
+370 info linkStuff express-generator@4.11.2
+371 verbose linkBins express-generator@4.11.2
+372 verbose link bins [ { express: './bin/express' }, '/usr/local/bin', true ]
+373 verbose linkMans express-generator@4.11.2
+374 verbose rebuildBundles express-generator@4.11.2
+375 verbose rebuildBundles [ '.bin', 'commander', 'mkdirp', 'sorted-object' ]
+376 verbose gentlyRm verifying that /usr/local is managed by npm
+377 silly isManaged /usr/local is not inside /usr/local/lib/node_modules
+378 silly isManaged /usr/local is not inside /usr/local/lib/node_modules
+379 silly isManaged /usr/local/bin is inside /usr/local
+380 silly gentlyRm /usr/local is managed by npm
+381 silly gentlyRm /usr/local/bin/express is under /usr/local
+382 verbose gentlyRm vacuuming /usr/local/bin/express up to /usr/local
+383 info install express-generator@4.11.2
+384 info postinstall express-generator@4.11.2
+385 verbose unlock done using /Users/aidarbuy/.npm/_locks/express-generator-d3cc1706f4adef09.lock for /usr/local/lib/node_modules/express-generator
+386 verbose stack Error: The package generator-karma does not satisfy its siblings' peerDependencies requirements!
+386 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:103:32
+386 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:225:5
+386 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+386 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+386 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+386 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+386 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+386 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+386 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+386 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+387 verbose cwd /Users/aidarbuy/Documents/medify4
+388 error Darwin 14.1.0
+389 error argv "node" "/usr/local/bin/npm" "install" "express-generator" "-g"
+390 error node v0.12.0
+391 error npm  v2.5.1
+392 error code EPEERINVALID
+393 error peerinvalid The package generator-karma does not satisfy its siblings' peerDependencies requirements!
+393 error peerinvalid Peer generator-angular@0.11.1 wants generator-karma@>=0.9.0
+394 verbose exit [ 1, true ]
